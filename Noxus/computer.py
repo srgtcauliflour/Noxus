@@ -10,3 +10,8 @@ def arc():
     return platform.uname().machine
 def cpu():
     return platform.uname().processor
+def distro():
+    if os() == "Linux":
+        return platform.linux_distribution()
+    else:
+        return os()
