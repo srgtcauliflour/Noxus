@@ -14,8 +14,4 @@ def distro():
     if os() == "Linux":
         return platform.linux_distribution()
     else:
-<<<<<<< HEAD
         return os()
-=======
-        return os()
->>>>>>> a2800409e2863e49934e05951eb6857da84b5e96
