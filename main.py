@@ -1,6 +1,6 @@
-import platform
+from Noxus import computer
 
-def os():
-    return platform.uname().system
-def osVersion():
-    return platform.uname().version
+print(computer.os(),computer.osVersion())
+print(computer.cpu())
+print(computer.arc())
+print(computer.name())
