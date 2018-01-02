@@ -3,5 +3,5 @@
 </p>
 <h1 align="center">Noxus</h1>
 
-# What is Noxus?
+## What is Noxus?
 Remote Access Tool is a piece of software used to remotely access or control a computer.
