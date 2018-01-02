@@ -6,3 +6,9 @@
 
 ## What is Noxus?
 Remote Access Tool is a piece of software used to remotely access or control a computer.
+
+
+## Libraries
+* [Sys] (https://docs.python.org/3/library/sys.html) - Native
+* [Platform] (https://docs.python.org/3/library/platform.html) - Native
+* [psutil] (https://pypi.python.org/pypi/psutil)
