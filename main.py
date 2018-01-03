@@ -1,5 +1,7 @@
 from Noxus import computer
 from Noxus import cpu
+from Noxus import memory
+
 import sys
 
 params = sys.argv
@@ -32,6 +34,13 @@ if len(params) > 1:
             print("Velocidade: ", cpu.freq(),"GHz")
             print("Cores: ", cpu.cores())
             print("Cores Fisicos: ", cpu.phyCores())
+    elif params[1] == "memory" or params[1] == "-m":
+        if str(params).find("size") > 0:
+            print("Tamanho da memoria: ", memory.size(), "GBs")
+        if str (params).find("Ppercentage") > 0:
+            print("Consumo atual da memoria: ", memory.percentage(), "%")
+        if str(params).find("free") > 0:
+            print("Memoria livre: ", memory.free(), "GBs")    
     elif params[1] == "arc":
         print("Arquitetura da maquina:", computer.arc())
     else:
