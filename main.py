@@ -18,14 +18,21 @@ if len(params) > 1:
               print("Consumindo: ", cpu.percentage().user + cpu.percentage().system, "%")
               print("Livre: ", cpu.percentage().idle, "%")
               print("__________________________________")
-        else:
+    elif len(params) == 4 and params[2] == "benchmarking" and int(params[3]) >= 1:
+          print("Analisando uso da CPU...")
+          media = 0
+          for x in range (int(params[3])):
+              media += cpu.percentage().user + cpu.percentage().system
+          media = media/int(params[3])
+          print("Média de consumo da CPU durante", params[3],"segundos:", media, " % ")
+    else:
           print("processador: ", computer.cpu())
           print("Velocidade: ", cpu.freq(), "GHz")
           print("Cores: ", cpu.cores())
-          print("Cores Fisicos: ",cpu.phycores())
+          print("Cores Fisicos: ", cpu.phyCores())
     elif params[1] == "arc":
-        print("Arquitetura da Maquina", computer.arc())
+        print("Arquitetura da maquina:", computer.arc())
     else:
         print("Parametro desconhecido!")
-else:
-    print("Sistema Operacional: ", computer.os())
+    else:
+          print("Sistema Operacional: ", computer.os())
