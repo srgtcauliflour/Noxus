@@ -40,7 +40,9 @@ if len(params) > 1:
         if str (params).find("Ppercentage") > 0:
             print("Consumo atual da memoria: ", memory.percentage(), "%")
         if str(params).find("free") > 0:
-            print("Memoria livre: ", memory.free(), "GBs")    
+            print("Memoria livre: ", memory.free(), "GBs")
+        if str (params).find("Used") > 0:
+            print("Memoria usada: ", memory.used(), "GBs")    
     elif params[1] == "arc":
         print("Arquitetura da maquina:", computer.arc())
     else:
