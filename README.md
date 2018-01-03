@@ -9,7 +9,7 @@ Remote Access Tool is a piece of software used to remotely access or control a c
 
 
 ## What was used?
-* [Sys](https://docs.python.org/3/library/sys.html) - Native
-* [Platform](https://docs.python.org/3/library/platform.html) - Native
+* [Sys](https://docs.python.org/3/library/sys.html)
+* [Platform](https://docs.python.org/3/library/platform.html)
 * [psutil](https://pypi.python.org/pypi/psutil)
 * [os](https://docs.python.org/3/library/os.html)
