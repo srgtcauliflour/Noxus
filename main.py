@@ -1,6 +1,7 @@
 from Noxus import computer
 from Noxus import cpu
 from Noxus import memory
+from Noxus import tools
 
 import sys
 
@@ -45,6 +46,12 @@ if len(params) > 1:
             print("Memoria usada: ", memory.used(), "GBs")    
     elif params[1] == "arc":
         print("Arquitetura da maquina:", computer.arc())
+    elif str (params).find("shutdown") > 0:
+        print('Desligando computador...')
+        tools.shutdown()
+    elif str(params).find("reboot") > 0:
+        print('Reiniciando computador...')
+        tools.reboot()
     else:
         print("Parametro desconhecido!")
 else:
