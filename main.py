@@ -17,7 +17,7 @@ if len(params) > 1:
                 print("Consumindo: ", consume.user + consume.system, "%")
                 print("Livre: ", consume.idle,"%")
                 print("_________________________")
-        elif len(params) == 4 and params[2] == "benchmarking" and int(params[3]) >= 1:
+    elif len(params) == 4 and params[2] == "benchmarking" and int(params[3]) >= 1:
             print("Analisando uso da CPU...")
             media = 0
             for x in range (int(params[3])):
