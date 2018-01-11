@@ -1,10 +1,5 @@
-from Noxus import computer
-from Noxus import cpu
-from Noxus import memory
-from Noxus import tools
-
+from Noxus import computer, memory, tools, disks
 import sys
-
 params = sys.argv
 
 if len(params) > 1:
