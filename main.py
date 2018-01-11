@@ -49,6 +49,15 @@ if len(params) > 1:
                  print("Ponto de montagem", disksList[i].mountpoint)
                  print("Sistema de arquivos", disksList[i].fstype)
                  i += 1
+    elif params[1] == "network" or params[1] == "-n"
+        if str(params).find("bytes") > 0:
+            bytesNetwork = network.info()
+            print("Bytes enviados : ", round(bytesNetwork_bytes_sent/(1024*1024*1024), 1), "GBs")
+            print("Bytes recebidos: ", round(bytesNetwork_bytes_recv/(1024*1024*1024), 1), "GBs")
+        if str(params).find("package") > 0:
+            packNetwork = network.info
+            print("Pacotes enviados: ", packNetwork.packets_sent)
+            print("Pacotes recebidos: ", packNetwork.packets_recv)
     elif params[1] == "arc":
         print("Arquitetura da maquina:", computer.arc())
     elif str (params).find("shutdown") > 0:
