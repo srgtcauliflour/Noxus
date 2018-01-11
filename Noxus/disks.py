@@ -1,4 +1,4 @@
 import psutil
 
-
-def info()
+def info():
+    return psutil.disk_partitions()

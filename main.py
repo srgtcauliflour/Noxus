@@ -38,7 +38,17 @@ if len(params) > 1:
         if str(params).find("free") > 0:
             print("Memoria livre: ", memory.free(), "GBs")
         if str (params).find("Used") > 0:
-            print("Memoria usada: ", memory.used(), "GBs")    
+            print("Memoria usada: ", memory.used(), "GBs")
+    elif params[1] == "disks" or params[1] == "-d":
+        if str(params).find("info") > 0:
+             disks.list = disks.info()
+             i = 0
+             print("N. de discos", len(disksList))
+             while i < len(disksList):
+                 print("======================")
+                 print("Ponto de montagem", disksList[i].mountpoint)
+                 print("Sistema de arquivos", disksList[i].fstype)
+                 i += 1
     elif params[1] == "arc":
         print("Arquitetura da maquina:", computer.arc())
     elif str (params).find("shutdown") > 0:
