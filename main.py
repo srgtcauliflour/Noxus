@@ -1,4 +1,4 @@
-from Noxus import computer, memory, tools, disks
+from Noxus import computer, memory, tools, disks, network
 import sys
 params = sys.argv
 
