@@ -33,7 +33,7 @@ if len(params) > 1:
     elif params[1] == "memory" or params[1] == "-m":
         if str(params).find("size") > 0:
             print("Tamanho da memoria: ", memory.size(), "GBs")
-        if str (params).find("Ppercentage") > 0:
+        if str (params).find("Percentage") > 0:
             print("Consumo atual da memoria: ", memory.percentage(), "%")
         if str(params).find("free") > 0:
             print("Memoria livre: ", memory.free(), "GBs")
